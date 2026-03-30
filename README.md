@@ -43,6 +43,6 @@ These insights help businesses:
 - Optimize marketing campaigns and campaign targeting
 
 ## Author
-**Your Name**  
-LinkedIn: [Your LinkedIn URL]  
-GitHub: [Your GitHub URL]
+**Lakshmi Bhavani Reddy**  
+LinkedIn: https://www.linkedin.com/in/lakshmibhavanireddy37/
+GitHub: https://github.com/lakshmibhavani7
