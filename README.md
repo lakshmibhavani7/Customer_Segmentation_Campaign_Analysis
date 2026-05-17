@@ -1,47 +1,60 @@
-# Customer Segmentation & Campaign Analysis
+---
 
-## Project Overview
-This project analyzes customer behavior using purchase history and demographics to identify high-value customers and optimize marketing campaigns. The goal is to segment customers and provide actionable insights for marketing strategies.
+## 🔑 Key Steps
 
-## Tools & Technologies
-- **Python**: Data cleaning, feature engineering, clustering (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-- **SQL**: Data analysis and aggregations (SQL Server)
-- **Power BI**: Interactive dashboard for visualization
+**1. Data Cleaning and Preprocessing (Python)**
+- Handled missing income values using median imputation
+- Created new features — Total Spending, Age, Total Accepted Campaigns, Total Children
+- Capped outliers to reduce skewness
 
-## Folder Structure
-1. **Data/** - Contains raw and processed datasets
-2. **Python/** - Jupyter notebooks for data cleaning, feature engineering, and KMeans clustering
-3. **SQL/** - SQL queries for customer segment and campaign analysis
-4. **PowerBI/** - Power BI dashboard file
+**2. Customer Segmentation (Python)**
+- Applied K-Means clustering to group 2,240 customers into 3 segments
+- Identified Cluster 2 as highest value segment with 1,551 average spend
+- Analyzed cluster characteristics by demographics and behavior
 
-## Key Steps
-1. **Data Cleaning & Preprocessing** (Python)
-   - Handled missing values and data types
-   - Created new features: Total Spending, Age, Total Accepted Campaigns, Total Children
-   - Handled outliers using capping
-2. **Customer Segmentation** (Python)
-   - Applied KMeans clustering to group customers into high, medium, and low-value segments
-   - Analyzed cluster characteristics
-3. **Data Analysis** (SQL)
-   - Calculated total and average spending by segment
-   - Analyzed campaign acceptance and customer distribution
-4. **Dashboard Visualization** (Power BI)
-   - KPI cards for total customers and total spending
-   - Clustered column charts for segment distribution, spending, and campaign acceptance
-   - Scatter plot for spending vs recency by segment
-   - Slicers for interactive filtering
-5. **Insights & Recommendations**
-   - High-value customers contribute significantly to revenue
-   - Some segments have many customers but lower spending → opportunity for targeted marketing
-   - Campaign 3 has the highest acceptance rate
-   - Customers with lower recency tend to spend more
+**3. Campaign Analysis (SQL)**
+- Calculated total and average spending by cluster
+- Analyzed acceptance rates across 5 marketing campaigns
+- Identified Campaign 4 as top performer with 167 acceptances
 
-## Business Impact
-These insights help businesses:
-- Focus on high-value customers
-- Improve customer retention strategies
-- Optimize marketing campaigns and campaign targeting
+**4. Dashboard Visualization (Power BI)**
+- KPI cards showing total customers and total spending
+- Clustered column charts for segment distribution and spending
+- Scatter plot for spending vs recency by segment
+- Slicers for interactive filtering by cluster and campaign
 
+---
+
+## 📊 Dashboard Preview
+
+![Dashboard](images/dashboard.png)
+
+---
+
+## 💡 Key Insights
+
+- Cluster 2 customers contribute highest revenue despite smaller size
+- Campaign 4 achieved highest acceptance rate (167) across all segments
+- Customers with lower recency tend to spend significantly more
+- Targeted campaigns for low-spending clusters can improve overall revenue
+
+---
+
+## 🎯 Business Impact
+
+- Helps businesses focus marketing budget on high value customers
+- Identifies underperforming segments with growth potential
+- Enables data driven campaign targeting to improve acceptance rates
+- Supports customer retention strategy through behavioral understanding
+
+---
+
+## 👩‍💻 Author
+
+**Lakshmi Bhavani Reddy**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lakshmibhavanireddy37/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/lakshmibhavani7)
 ## Author
 **Lakshmi Bhavani Reddy**  
 LinkedIn: https://www.linkedin.com/in/lakshmibhavanireddy37/
